@@ -1,9 +1,9 @@
 /**
- * @description: test
+ * @description: ThreadDemo
  * @author: buqi
  * @create: 2020-04-01 17:30
  */
-public class test {
+public class ThreadDemo {
 
     public static void main(String[] args) {
         Thread myThread = new MyThread();

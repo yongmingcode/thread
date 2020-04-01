@@ -12,7 +12,8 @@ public class RunnableDemo {
     }
 
     public static void main(String[] args) {
-        new MyThread().start();
+//        new Thread(new MyThread()).start();
+//        new MyThread().start();
 
         // Java 8 函数式编程，可以省略MyThread类
         new Thread(() -> {
