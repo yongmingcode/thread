@@ -8,6 +8,8 @@ package threadGroup;
  * 执行main()方法线程的名字是main，如果在new Thread时没有显式指定，
  * 那么默认将父线程（当前执行new Thread的线程）线程组设置为自己的线程组。
  *
+ * ThreadGroup管理着它下面的Thread，ThreadGroup是一个标准的向下引用的树状结构，
+ * 这样设计的原因是防止"上级"线程被"下级"线程引用而无法有效地被GC回收。
  * @author: buqi
  * @create: 2020-04-02 13:35
  */
