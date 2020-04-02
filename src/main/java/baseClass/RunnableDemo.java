@@ -1,3 +1,5 @@
+package baseClass;
+
 /**
  * @description: 实现Runnable接口
  * @author: buqi
