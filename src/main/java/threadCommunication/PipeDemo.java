@@ -76,9 +76,14 @@ public class PipeDemo {
         // 这里注意一定要连接，才能通信
         writer.connect(reader);
 
-        new Thread(new ReaderThread(reader)).start();
+        Thread a = new Thread(new ReaderThread(reader));
+        a.start();
+        System.out.println(a.getName() + " a :" + a.getState());
         Thread.sleep(1000);
+        System.out.println(a.getName() + " a :" + a.getState());
         new Thread(new WriterThread(writer)).start();
+        Thread.sleep(1000);
+        System.out.println(a.getName() + " a :" + a.getState());
     }
 
 }
