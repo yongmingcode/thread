@@ -6,6 +6,8 @@ import java.io.PipedWriter;
 
 /**
  * @description: 管道是基于“管道流”的通信方式。
+ * 使用管道多半与I/O流相关。当我们一个线程需要先另一个线程发送一个信息（比如字符串）或者文件等等时，就需要使用管道通信了。
+ *
  * 简单分析一下这个示例代码的执行流程：
  *    1.线程ReaderThread开始执行，
  *    2.线程ReaderThread使用管道reader.read()进入”阻塞“，
